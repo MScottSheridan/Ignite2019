@@ -29,7 +29,7 @@ steps:
     configuration: '$(buildConfiguration)'
 - task: BatchScript@1
   inputs:
-    filename: '$(build.sourcesdirectory)'
+    filename: '$(build.sourcesdirectory)/PokerLeagueManager.UI.Web/BuildAngular.bat'
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
